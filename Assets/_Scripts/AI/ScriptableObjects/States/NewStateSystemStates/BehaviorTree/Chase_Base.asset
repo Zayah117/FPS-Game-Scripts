@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fad8b7bd60f50d4ca22a8fd0bb88979, type: 3}
+  m_Name: Chase_Base
+  m_EditorClassIdentifier: 
+  parentState: {fileID: 11400000, guid: cf3fa5f43081269408bbbd6e38d487f3, type: 2}
+  transitions:
+  - decisions:
+    - decision: {fileID: 11400000, guid: e82c0cefdd6308648b5662b5302b999f, type: 2}
+      value: 1
+    - decision: {fileID: 11400000, guid: e7d802c3836948f4798c656beeecfdee, type: 2}
+      value: 1
+    decisionType: 0
+    trueState: {fileID: 11400000, guid: 1beaae0647592b747ab04b4f12589766, type: 2}
+    falseState: {fileID: 11400000, guid: cd996db8458077f4b8812f1780fe9536, type: 2}
+  - decisions:
+    - decision: {fileID: 11400000, guid: d542646b3da7e014f92b04edd8f453e2, type: 2}
+      value: 1
+    decisionType: 0
+    trueState: {fileID: 11400000}
+    falseState: {fileID: 11400000, guid: cd996db8458077f4b8812f1780fe9536, type: 2}
+  resetMovePositionOnExit: 1
+  actions:
+  - {fileID: 11400000, guid: 15031fdcffe1e85458ade3102dbeb9a5, type: 2}
+  animationTrigger: Walking
